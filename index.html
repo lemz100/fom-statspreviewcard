@@ -7,27 +7,42 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="container">
+    <figure>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./images/image-header-desktop.jpg" type="image/jpg" alt="desktop image">
+        <source srcset="./images/image-header-mobile.jpg" type="image/jpg" alt="mobile image">
+        <img src="./images/image-header-mobile.jpg" alt="mobile image">
+      </picture>
+      <div class="overlay"></div>
+    </figure>
+    <section class="content">
+      <article class="text">
+        <p class="heading">Get <span>insights</span> that help your business grow.</p>
+        <p class="desc">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+      </article>
+      <article class="statistics">
+        <span class="statistic">
+          <p class="stat">10k+</p>
+          <p class="info">companies</p>
+        </span>
+        <span class="statistic">
+          <p class="stat">314</p>
+          <p class="info">templates</p>
+        </span>
+        <span class="statistic">
+          <p class="stat">12m+</p>
+          <p class="info">queries</p>
+        </span>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
